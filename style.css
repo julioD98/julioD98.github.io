@@ -70,6 +70,10 @@ body{
     font-size: var(--font-xl);
 }
 
+.front,.back{
+    color: var(--background);
+}
+
 .front{
     background: var(--front);
 }
