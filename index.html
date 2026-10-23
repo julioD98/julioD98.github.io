@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/ico_game.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./script.mjs"></script>
+    <title>Ahorcado</title>
+  </head>
+  <body>
+    <div class="wrap_app">
+      <div class="input_word" id="input_word">
+        <h1>Ahorcado</h1>
+        <div class="wrap_form">
+          <div class="wrap_input">
+            <input type="password" class="word" id="word" />
+            <button type="button" class="btn" id="reveal">ver</button>
+          </div>
+          <button class="btn" id="start">Comenzar</button>
+        </div>
+      </div>
+      <div class="wrap_game" id="game">
+        <h1 class="title">Ahorcado</h1>
+        <div class="game">
+          <div class="player">
+            <img src="./img/sprite_00.webp" id="img_player" />
+          </div>
+          <div class="board_game">
+            <div class="board" id="board"></div>
+            <div class="keyboard" id="keyboard"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+* {
+  --success: #2ecc71;
+  --warning: #e67e22;
+  --danger: #e74c3c;
+  --primary: #2980b9;
+  --primary-hover: #3498db;
+
+  --background: #2c3e50;
+  --foreground: #34495e;
+
+  --font-color: #ecf0f1;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2 {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0px;
+  color: var(--font-color);
+}
+
+.wrap_app {
+  width: 100%;
+  height: 100vh;
+  background: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input_word {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: var(--foreground);
+}
+
+.wrap_form {
+  text-align: center;
+}
+
+.wrap_input {
+  margin: 30px 0px;
+}
+
+.word {
+  background: var(--background);
+  border: 0px;
+  color: var(--font-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  outline: none;
+}
+
+.btn {
+  padding: 5px 10px;
+  background: var(--primary);
+  border: 0px;
+  border-radius: 5px;
+  color: var(--font-color);
+  cursor: pointer;
+}
+.btn:hover {
+  background: var(--primary-hover);
+}
+
+.wrap_game {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background: var(--background);
+  grid-template-rows: 100px 1fr;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--foreground);
+}
+
+.game {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.player {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player img {
+  width: 100%;
+}
+
+.board_game {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 70% 30%;
+}
+
+.board {
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: scroll;
+  padding: 10px;
+}
+
+.keyboard {
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+  background: var(--background);
+}
+
+.letter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: var(--foreground);
+  margin: 2px;
+  border-bottom: 2px solid var(--font-color);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.keyboard_letter {
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--foreground);
+}
+
+.keyboard_letter_correct {
+  background: var(--success);
+  color: var(--background);
+}
+.keyboard_letter_incorrect {
+  background: var(--danger);
+  color: var(--background);
+}
